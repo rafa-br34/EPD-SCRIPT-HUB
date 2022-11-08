@@ -11,7 +11,7 @@ def main():
       "embeds": [
         {
           "title": "EPD Hub Updated",
-          "url": "https://github.com/PBeta-R34/EPD-HUB",
+          "url": "https://github.com/rafa-br34/EPD-SCRIPT-HUB",
           "description": "Update Date " + time.strftime("%a, %d %b %Y %H:%M:%S", time.gmtime()),
           "color": 0x0DACE0,
           "fields": [

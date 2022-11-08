@@ -12,7 +12,7 @@ GEnv.EPD.HttpGet =
 
 GEnv.EPD.DEBUG = false -- Enable For Debugging
 
-local LoadedFunction = loadstring(_G.EPD.HttpGet("https://raw.githubusercontent.com/PBeta-R34/EPD-SCRIPT-HUB/main/Source/Loader.lua"))
+local LoadedFunction = loadstring(_G.EPD.HttpGet("https://raw.githubusercontent.com/rafa_br34/EPD-SCRIPT-HUB/main/Source/Loader.lua"))
 if type(LoadedFunction) == "function" then
 	local Success, Returned = pcall(LoadedFunction)
 	-- We Don't Wanna Print Unless Debug Is True

@@ -1,6 +1,6 @@
 local BaseLib = {
 	-- Should Be Initialized By The Loader, But In Case It Isn't
-	RootPath = "https://raw.githubusercontent.com/PBeta-R34/EPD-SCRIPT-HUB/main/Source/",
+	RootPath = "https://raw.githubusercontent.com/rafa_br34/EPD-SCRIPT-HUB/main/Source/",
 	Exploit = {
 		Name = "",
 		Checksums = {}
