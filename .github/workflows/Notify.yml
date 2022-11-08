@@ -1,0 +1,37 @@
+
+name: Webhook Send
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      max-parallel: 1
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setting Up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Installing Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Send Webhook
+      env:
+        DiscordWebhookToken: ${{ secrets.DISCORD_HUB_UPDATE_WEBHOOK }}
+        CommitMessage: ${{ github.event.commits[0].message }}
+        PingTag: "<@&987194799587225681>"
+      run: |
+        python .github/workflows/WebhookSend.py
+
+
