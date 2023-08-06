@@ -1,3 +1,6 @@
+# NOTE:
+As of 2023 this repository is abandoned, EPD used to be a Roblox exploit, but with the rise of new anti-cheats, I've decided to seize development. 
+Feel free to use this source for anything as long as it is properly credited.
 
 ## Welcome To The EPD-Script-Hub Readme File
 
